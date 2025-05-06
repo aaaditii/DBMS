@@ -22,7 +22,7 @@ BEGIN
   ELSIF b BETWEEN 501 AND 1000 THEN
     UPDATE route_header SET fare = 800.00 WHERE route_id = routeid;
   ELSIF b > 1000 THEN
-    DBMS_OUTPUT.put_line('Sorry, distance is too large.');
+    DBMS_OUTPUT.put_line('Sorry, distance is too large!');
   END IF;
 END;
 /
